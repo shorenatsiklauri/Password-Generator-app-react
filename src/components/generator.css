@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap");
+
+.h1 {
+  color: white;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 632px;
+  width: 540px;
+  border-radius: 0px;
+}
+
+.paswordspace {
+  height: 80px;
+  width: 540px;
+  border-radius: 0px;
+  background-color: #24232c;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+}
+
+.boxforparamentrs {
+  height: 500px;
+  width: 500px;
+  border-radius: 0px;
+  background-color: #24232c;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px;
+}
+.boxforlengthoutput {
+  width: 400px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.autputnumber {
+  height: 42px;
+  width: 39px;
+  border-radius: nullpx;
+  background-color: #24232c;
+  color: #a4ffaf;
+  margin-right: -70px;
+
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.smallticks {
+  background-color: #a4ffaf;
+  color: #a4ffaf;
+}
+
+.boxesforchoice label {
+  color: #e6e5ea;
+  font-size: 20px;
+}
+
+.CharacterLength {
+  height: 6px;
+  height: 6px;
+  width: 238px;
+}
+
+.boxesforchoice {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+  margin-top: 0px;
+  gap: 10px;
+}
+
+.STRENGTH {
+  height: 72px;
+  width: 476px;
+  border-radius: 0px;
+  background-color: #18171f;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 32px;
+  color: #817d92;
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+}
+#output {
+  color: white;
+  margin: 20px;
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.smallbox {
+  height: 28px;
+  width: 5px;
+  left: 102.5px;
+  top: 2px;
+  border-radius: 0px;
+}
+
+.generatebutton {
+  height: 72px;
+  width: 476px;
+  border-radius: 0px;
+  background-color: #a4ffaf;
+  color: #24232c;
+  margin-top: 32px;
+}
+.paswordspace button {
+  width: 40px;
+  height: 40px;
+  background-color: #24232c;
+  border: none;
+  margin-right: 50px;
+}
+.paswordspace button img {
+  margin-left: -8px;
+}
+
+.paswordspace button:hover {
+  color: #e6e5ea;
+}
+.smallbox {
+  height: 28px;
+  width: 10px;
+  left: 102.5px;
+  top: 2px;
+  border-radius: 0px;
+  background-color: #f8cd65;
+}
+.red {
+  background-color: #f64a4a;
+}
+
+.Orange {
+  background-color: #fb7c58;
+}
+
+.green {
+  background-color: #a4ffaf;
+}
+
+.yellow {
+  background-color: #f8cd65;
+}
+.white {
+  background-color: #e6e5ea;
+}
+
+@media (max-width: 640px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 540px;
+    width: 343px;
+    left: 16px;
+    top: 64px;
+    border-radius: 0px;
+
+    border-radius: 0px;
+  }
+
+  .paswordspace {
+    height: 80px;
+    width: 343px;
+    border-radius: 0px;
+    background-color: #24232c;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+  }
+
+  .boxforparamentrs {
+    height: 500px;
+    width: 343px;
+    border-radius: 0px;
+    background-color: #24232c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .boxforlengthoutput {
+    width: 400px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .autputnumber {
+    height: 42px;
+    width: 39px;
+    border-radius: nullpx;
+    background-color: #24232c;
+    color: #a4ffaf;
+    margin-right: -70px;
+
+    font-family: "JetBrains Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .smallticks {
+    background-color: #a4ffaf;
+    color: #a4ffaf;
+  }
+
+  .boxesforchoice label {
+    color: #e6e5ea;
+    font-size: 20px;
+  }
+
+  .CharacterLength {
+    height: 6px;
+    height: 6px;
+    width: 238px;
+  }
+
+  .boxesforchoice {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    margin-top: 0px;
+    gap: 10px;
+  }
+
+  .STRENGTH {
+    height: 72px;
+    width: 476px;
+    border-radius: 0px;
+    background-color: #18171f;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 32px;
+    color: #817d92;
+    font-family: "JetBrains Mono";
+    font-style: normal;
+    font-weight: 700;
+  }
+  #output {
+    color: white;
+    margin: 20px;
+    font-family: "JetBrains Mono";
+    font-style: normal;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .smallbox {
+    height: 28px;
+    width: 5px;
+    left: 102.5px;
+    top: 2px;
+    border-radius: 0px;
+  }
+
+  .generatebutton {
+    height: 72px;
+    width: 476px;
+    border-radius: 0px;
+    background-color: #a4ffaf;
+    color: #24232c;
+    margin-top: 32px;
+  }
+  .paswordspace button {
+    width: 40px;
+    height: 40px;
+    background-color: #24232c;
+    border: none;
+    margin-right: 50px;
+  }
+}

@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap");
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  font-family: "JetBrains Mono", monospace;
+}
+.card {
+  height: 632px;
+  width: 540px;
+  font-family: "JetBrains Mono", monospace;
+
+  border-radius: 0px;
+
+  border-radius: 0px;
+  background-color: #24232c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: black;
+  gap: 20px;
+}
+
+header {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 32px;
+  /* identical to box height */
+  font-family: "JetBrains Mono", monospace;
+  text-align: right;
+
+  /* Grey */
+
+  color: #817d92;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+}
