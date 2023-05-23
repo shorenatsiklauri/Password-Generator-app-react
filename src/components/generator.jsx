@@ -12,6 +12,9 @@ function PassGenerator() {
   const [passwordStrength, setPasswordStrength] = useState('Too Weak');
   const [smallBoxColors, setSmallBoxColors] = useState(['red', 'white', 'Orange', 'yellow']);
 
+  const [handleCopyClick, setHandleCopyClick] = useState(false);
+  
+
   const generatePassword = () => {
     const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
@@ -33,16 +36,15 @@ function PassGenerator() {
 
     setPassword(generatedPassword);
   };
-
-  const handleCopyClick = () => {
+  const handleCopyButtonClick = () => {
     const passwordToCopy = document.getElementById('output').textContent;
-
+  
     navigator.clipboard.writeText(passwordToCopy).then(
       () => {
-        console.log('Text copied to clipboard');
+        setHandleCopyClick(true);
       },
       () => {
-        console.log('Error copying text to clipboard');
+        setHandleCopyClick(false);
       }
     );
   };
@@ -83,8 +85,12 @@ function PassGenerator() {
      
     <div className='card'>
 
-      <div className="paswordspace"><span id="output">{password}    </span>
-      <button onClick={handleCopyClick} >
+      <div className="paswordspace"><span id="output">{password}    </span> 
+      <div className='copied' > { handleCopyClick ? 'copied' : ''} </div>
+
+
+
+      <button onClick={handleCopyButtonClick} >
       <img src={copyimg}  alt="Copy Icon" /></button>
 
  

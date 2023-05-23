@@ -24,7 +24,9 @@
   align-items: center;
   margin: auto;
 }
-
+.copied {
+  margin-right: -300px;
+}
 .boxforparamentrs {
   height: 500px;
   width: 500px;
@@ -45,17 +47,16 @@
 }
 .autputnumber {
   height: 42px;
-  width: 39px;
+  width: 30px;
   border-radius: nullpx;
   background-color: #24232c;
   color: #a4ffaf;
-  margin-right: -70px;
+  margin-right: -65px;
 
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
-  line-height: 42px;
 }
 
 .smallticks {
@@ -72,6 +73,9 @@
   height: 6px;
   height: 6px;
   width: 238px;
+  color: inherit;
+  background-color: #a4ffaf;
+  color: #a4ffaf;
 }
 
 .boxesforchoice {
@@ -172,17 +176,15 @@
     flex-direction: column;
     margin: auto;
     height: 540px;
-    width: 343px;
+    width: 400px;
     left: 16px;
     top: 64px;
-    border-radius: 0px;
-
     border-radius: 0px;
   }
 
   .paswordspace {
     height: 80px;
-    width: 343px;
+    width: 385px;
     border-radius: 0px;
     background-color: #24232c;
     padding-top: 15px;
@@ -202,11 +204,10 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding: 20px;
   }
 
   .boxforlengthoutput {
-    width: 400px;
+    width: 300px;
 
     display: flex;
     justify-content: space-between;
@@ -218,8 +219,7 @@
     border-radius: nullpx;
     background-color: #24232c;
     color: #a4ffaf;
-    margin-right: -70px;
-
+    margin-right: -40px;
     font-family: "JetBrains Mono";
     font-style: normal;
     font-weight: 700;
@@ -234,17 +234,17 @@
 
   .boxesforchoice label {
     color: #e6e5ea;
-    font-size: 20px;
+    font-size: 12px;
   }
 
   .CharacterLength {
     height: 6px;
     height: 6px;
-    width: 238px;
+    width: 200px;
   }
 
   .boxesforchoice {
-    width: 400px;
+    width: 300px;
     display: flex;
     flex-direction: row;
     font-size: 10px;
@@ -254,7 +254,7 @@
 
   .STRENGTH {
     height: 72px;
-    width: 476px;
+    width: 340px;
     border-radius: 0px;
     background-color: #18171f;
     display: flex;
@@ -288,7 +288,7 @@
 
   .generatebutton {
     height: 72px;
-    width: 476px;
+    width: 340px;
     border-radius: 0px;
     background-color: #a4ffaf;
     color: #24232c;
@@ -299,6 +299,6 @@
     height: 40px;
     background-color: #24232c;
     border: none;
-    margin-right: 50px;
+    margin-right: 20px;
   }
 }
