@@ -25,7 +25,9 @@
   margin: auto;
 }
 .copied {
-  margin-right: -300px;
+  margin-right: -250px;
+  font-size: 20px;
+  color: #817d92;
 }
 .boxforparamentrs {
   height: 500px;
