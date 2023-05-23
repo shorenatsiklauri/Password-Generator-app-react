@@ -303,4 +303,10 @@
     border: none;
     margin-right: 20px;
   }
+
+  .copied {
+    margin-left: -50px;
+    font-size: 15px;
+    color: #817d92;
+  }
 }
