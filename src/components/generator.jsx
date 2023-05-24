@@ -5,16 +5,15 @@ import copyimg from '../assets/icon-copy.svg';
 function PassGenerator() {
   const [password, setPassword] = useState('');
   const [length, setLength] = useState(10);
-  const [uppercase, setUppercase] = useState(true);
-  const [lowercase, setLowercase] = useState(true);
-  const [numbers, setNumbers] = useState(true);
-  const [symbols, setSymbols] = useState(true);
-  const [passwordStrength, setPasswordStrength] = useState('Too Weak');
+  const [uppercase, setUppercase] = useState(false);
+  const [lowercase, setLowercase] = useState(false);
+  const [numbers, setNumbers] = useState(false);
+  const [symbols, setSymbols] = useState(false);
+  const [passwordStrength, setPasswordStrength] = useState(false);
   const [smallBoxColors, setSmallBoxColors] = useState(['red', 'white', 'Orange', 'yellow']);
-
   const [handleCopyClick, setHandleCopyClick] = useState(false);
   
-
+  
   const generatePassword = () => {
     const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
@@ -74,8 +73,8 @@ function PassGenerator() {
         setSmallBoxColors(['green', 'green', 'green', 'green']);
         break;
       default:
-        setPasswordStrength('Too Weak');
-        setSmallBoxColors(['red', 'white', 'white', 'white']);
+        setPasswordStrength('');
+        setSmallBoxColors([]);
     }
   }, [uppercase, lowercase, numbers, symbols]);
 
@@ -104,7 +103,7 @@ function PassGenerator() {
         <input
           type="range"
           min="1"
-          max="10"
+          max="20"
           value={length}
           onChange={(e) => setLength(parseInt(e.target.value))}
           className='CharacterLength'
