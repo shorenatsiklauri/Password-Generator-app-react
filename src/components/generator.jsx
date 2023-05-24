@@ -74,7 +74,7 @@ function PassGenerator() {
         break;
       default:
         setPasswordStrength('');
-        setSmallBoxColors([]);
+        setSmallBoxColors(['white', 'white','white','white']);
     }
   }, [uppercase, lowercase, numbers, symbols]);
 

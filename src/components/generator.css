@@ -27,7 +27,7 @@
 .copied {
   margin-right: -250px;
   font-size: 20px;
-  color: #817d92;
+  color: #a4ffaf;
 }
 .boxforparamentrs {
   height: 500px;
@@ -74,7 +74,7 @@
 .CharacterLength {
   height: 6px;
   height: 6px;
-  width: 238px;
+  width: 100%;
   color: inherit;
   background-color: #a4ffaf;
   color: #a4ffaf;
@@ -242,7 +242,7 @@
   .CharacterLength {
     height: 6px;
     height: 6px;
-    width: 200px;
+    width: 100%;
   }
 
   .boxesforchoice {
@@ -307,6 +307,6 @@
   .copied {
     margin-left: -50px;
     font-size: 15px;
-    color: #817d92;
+    color: #a4ffaf;
   }
 }
