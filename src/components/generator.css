@@ -25,8 +25,8 @@
   margin: auto;
 }
 .copied {
-  margin-right: -250px;
-  font-size: 20px;
+  margin-right: -200px;
+  font-size: 14px;
   color: #a4ffaf;
 }
 .boxforparamentrs {
@@ -305,8 +305,8 @@
   }
 
   .copied {
-    margin-left: -50px;
-    font-size: 15px;
+    margin-left: -100px;
+    font-size: 12px;
     color: #a4ffaf;
   }
 }
