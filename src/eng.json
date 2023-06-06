@@ -1,0 +1,17 @@
+
+{
+    "great": "Password Generator",
+    "criteria1": "Uppercase",
+    "criteria2": "Include Lowercase Letters",
+    "criteria3": "Include Numbers",
+    "criteria4": "Include Symbols",
+    "criteria5": "Character Length:",
+    "criteria6": "STRENGTH:",
+    "criteria7": "Generate",
+    "criteria8": "Copied",
+    "TooWeak": "Too Weak",
+    "Weak": "Weak",
+    "Medium":"Medium",
+    "Strong1":"Strong"
+
+}

@@ -49,5 +49,10 @@ header {
   justify-content: center;
 }
 
+#language {
+  color: #817d92;
+  border: none;
+}
+
 @media (max-width: 640px) {
 }

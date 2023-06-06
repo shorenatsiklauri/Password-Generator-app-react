@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './generator.css';
 import copyimg from '../assets/icon-copy.svg';
+import { initReactI18next, useTranslation } from "react-i18next";
+import i18next from 'i18next';
 
 function PassGenerator() {
   const [password, setPassword] = useState('');
@@ -57,19 +59,19 @@ function PassGenerator() {
   
     switch (strength) {
       case 1:
-        setPasswordStrength('Too Weak');
+        setPasswordStrength((t("TooWeak")));
         setSmallBoxColors(['red', 'white', 'white', 'white']);
         break;
       case 2:
-        setPasswordStrength('Weak');
+        setPasswordStrength(t("Weak"));
         setSmallBoxColors(['Orange', 'Orange', 'white', 'white']);
         break;
       case 3:
-        setPasswordStrength('Medium');
+        setPasswordStrength(t("Medium"));
         setSmallBoxColors(['yellow', 'yellow', 'yellow', 'white']);
         break;
       case 4:
-        setPasswordStrength('Strong');
+        setPasswordStrength(t("Strong1"));
         setSmallBoxColors(['green', 'green', 'green', 'green']);
         break;
       default:
@@ -78,6 +80,14 @@ function PassGenerator() {
     }
   }, [uppercase, lowercase, numbers, symbols]);
 
+
+  const { t } = useTranslation();
+  const change = (evenet) => {
+
+    i18next.changeLanguage(event.target.value);
+  }
+
+
   return (
 
     <div>
@@ -85,7 +95,7 @@ function PassGenerator() {
     <div className='card'>
 
       <div className="paswordspace"><span id="output">{password}    </span> 
-      <div className='copied' > { handleCopyClick ? 'copied' : ''} </div>
+      <div className="copied">{handleCopyClick ? t("criteria8") : ''}</div>
 
 
 
@@ -96,7 +106,7 @@ function PassGenerator() {
      </div>
       <div className="boxforparamentrs">
         <div className='boxforlengthoutput'>
-          <p>Character Length:</p>
+          <p>{t("criteria5")}</p>
           <span className='autputnumber' >{length}</span>
           
         </div>
@@ -116,7 +126,7 @@ function PassGenerator() {
             onChange={(e) => setUppercase(e.target.checked)}
             className='smallticks'
           />
-          <label htmlFor="uppercase">Uppercase</label>
+          <label htmlFor="uppercase">{t("criteria1")}</label>
         </div>
         <div className='boxesforchoice'>
           <input
@@ -126,7 +136,7 @@ function PassGenerator() {
             onChange={(e) => setLowercase(e.target.checked)}
             className='smallticks'
           />
-          <label htmlFor="lowercase">Include Lowercase Letters</label>
+          <label htmlFor="lowercase">{t("criteria2")}</label>
         </div>
         <div className='boxesforchoice'>
           <input
@@ -136,7 +146,7 @@ function PassGenerator() {
             onChange={(e) => setNumbers(e.target.checked)}
             className='smallticks'
           />
-          <label htmlFor="numbers">Include Numbers</label>
+          <label htmlFor="numbers">{t("criteria3")}</label>
         </div>
         <div className='boxesforchoice'>
           <input
@@ -146,9 +156,9 @@ function PassGenerator() {
             onChange={(e) => setSymbols(e.target.checked)}
             className='smallticks'
           />
-          <label htmlFor="symbols">Include Symbols</label>
+          <label htmlFor="symbols">{t("criteria4")}</label>
         </div>
-        <div className='STRENGTH'>STRENGTH
+        <div className='STRENGTH'>{t("criteria6")}
         <span id='output'>
               {passwordStrength}
               {smallBoxColors.map((color, index) => (
@@ -157,7 +167,7 @@ function PassGenerator() {
             </span>
         
         </div>
-        <button className='generatebutton' onClick={generatePassword}>Generate</button>
+        <button className='generatebutton' onClick={generatePassword}>{t("criteria7")}</button>
       </div>
     </div>
     </div>
