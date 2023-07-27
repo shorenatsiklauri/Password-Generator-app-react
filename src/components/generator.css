@@ -172,6 +172,12 @@
   background-color: #e6e5ea;
 }
 
+.copied {
+  margin-left: -20px;
+  font-size: 10px;
+  color: #817d92;
+}
+
 @media (max-width: 640px) {
   .card {
     display: flex;
@@ -305,8 +311,8 @@
   }
 
   .copied {
-    margin-left: -100px;
-    font-size: 12px;
-    color: #a4ffaf;
+    margin-left: -150px;
+    font-size: 8px;
+    color: #817d92;
   }
 }
